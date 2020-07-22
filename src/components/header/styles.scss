@@ -1,0 +1,29 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+
+
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+
+        &__logo{
+            height: 34px;
+            width: 177px;
+            background-image: url(../../assets/images/logo.png);
+        }
+        
+        .button-wrapper{
+            display: flex;
+        }
+
+        .button--left{
+            margin-right : 20px;
+        }
+    }
+}

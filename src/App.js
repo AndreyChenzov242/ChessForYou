@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+// Modules
+
+// import { Router } from 'react-router';
+
+// Components
+
+// import { HomeButtonLink } from './components/HomeButtonLink';
+// import { MainRouter } from './router/MainRouter';
+
+// Utils
+
+// import { history } from './utils/history';
+
+import './styles/index.scss';
+
+// ----------------
+
+import MainPage from "./pages/mainPage";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* <Router history={history}>
+        <MainRouter />
+        <HomeButtonLink />
+      </Router> */}
+      {/* hello */}
+      <MainPage />
     </div>
   );
-}
-
-export default App;
+};

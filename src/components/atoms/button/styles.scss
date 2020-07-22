@@ -1,0 +1,27 @@
+@import "../../../styles/colors.scss";
+
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid $yellow;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgba($color: #000000, $alpha: 0);
+    transition: all 0.3s;
+    color: $text-color;
+
+    &--size-sm{
+        font-size: 1rem;
+        min-width: 130px;
+    }
+    &--size-md{
+        font-size: 1.125rem;
+        min-width: 170px;
+    }
+    &--size-lg{
+        font-size: 1.25rem;
+        min-width: 200px;
+    }
+}
