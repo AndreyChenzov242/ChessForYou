@@ -13,7 +13,7 @@ import React from "react";
 
 // import { history } from './utils/history';
 
-import './styles/index.scss';
+// import './styles/index.scss';
 
 // ----------------
 

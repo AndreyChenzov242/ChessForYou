@@ -1,16 +1,15 @@
 @import "../../../styles/colors.scss";
+@import "../../../styles/mixins.scss";
 
 
 .button{
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 2px solid $yellow;
+    border: 2px solid;
     border-radius: 25px;
     cursor: pointer;
-    background-color: rgba($color: #000000, $alpha: 0);
-    transition: all 0.3s;
-    color: $text-color;
+    transition: all 0.5s;
 
     &--size-sm{
         font-size: 1rem;
@@ -23,5 +22,68 @@
     &--size-lg{
         font-size: 1.25rem;
         min-width: 200px;
+    }
+    &--size-xl{
+        font-size: 1.25rem;
+        font-weight: bold;
+        min-width: 240px;
+    }
+
+    &--mr-sm{
+        margin-right : 8px;
+    }
+    &--ml-sm{
+        margin-left : 8px;
+    }
+    &--ml-md{
+        margin-left : 16px;
+    }
+    &--mr-md{
+        margin-right : 16px;
+    }
+    &--ml-lg{
+        margin-left : 32px;
+    }
+    &--mr-lg{
+        margin-right : 32px;
+    }
+    &--ml-xl{
+        margin-left : 48px;
+    }
+    &--mr-xl{
+        margin-right : 48px;
+    }
+    &--mx-auto{
+        margin-left : auto;
+        margin-right : auto;
+    }
+
+    &--variant-contained{
+        &.button--color-yellow{
+            border-color: $yellow;
+            background-color: $yellow;
+            color: $blue-dark-2;
+            @include btn-hover(rgba(0,0,0,0),$text-color,$yellow)
+            
+        }
+        &.button--color-white{
+            border-color: #fff;
+            background-color: #fff;
+            color: $blue-dark-2;
+            @include btn-hover(rgba(0,0,0,0),$text-color,#ffffff)
+        }
+    }
+
+    &--variant-outlined{
+        &.button--color-yellow{
+            border-color: $yellow;
+            color: $text-color;
+            @include btn-hover($yellow,$blue-dark-2,$yellow)
+        }
+        &.button--color-white{
+            border-color: #fff;
+            color: $text-color;
+            @include btn-hover(#ffffff,$blue-dark-2,#ffffff)
+        }
     }
 }
