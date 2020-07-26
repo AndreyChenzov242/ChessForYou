@@ -1,0 +1,16 @@
+@import "../../../styles/colors.scss";
+
+.intro{
+    position: relative;
+    background-image: url(../../../assets/images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+    .content-limiter{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}

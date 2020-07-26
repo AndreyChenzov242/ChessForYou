@@ -1,15 +1,14 @@
-import React from "react";
+import React from 'react';
 
 //Components
 
-import Button from "../../components/atoms/button";
-import { ContentWidthLimiter } from "../ContentWidthLimiter";
+import Button from "../../../components/atoms/button";
+import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
 
 //Styles
 import "./styles.scss";
-import "../../styles/index.scss";
 
-export default function Header() {
+export const Header = () => {
   return (
     <header className="header ds">
       <ContentWidthLimiter>
