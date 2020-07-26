@@ -11,39 +11,6 @@
     outline: none;
   }
 
-  .slick-arrow {
-    color: $yellow;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &.slick-prev {
-      left: 8px;
-
-      &:before {
-        display: none;
-      }
-
-      .react-icon {
-        font-size: 48px;
-      }
-    }
-
-    &.slick-next {
-      right: 8px;
-
-      &:before {
-        display: none;
-      }
-
-      .react-icon {
-        font-size: 48px;
-      }
-    }
-  }
-
   .slick-dots {
     position: absolute;
     height: 100%;

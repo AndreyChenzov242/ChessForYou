@@ -3,19 +3,11 @@ import Slider from "react-slick";
 
 
 import {IntroSliderCard} from '../IntroSliderCard';
+import {IntroSliderCardData} from '../../../../constants/IntroSliderCardData';
 
 import './styles.scss';
 
-const data = [
-  {
-    name: 'Landing page',
-    des: 'Description example...',
-  },
-  {
-    name: 'Application',
-    des: 'Description example1...',
-  },
-];
+
 
 
 export class IntroSlider extends React.Component {
@@ -23,37 +15,29 @@ export class IntroSlider extends React.Component {
     var settings = {
       dots: true,
       infinite: true,
-      // fade: true,
-
+      arrows: false,
       slidesToShow:1,
       slidesToScroll: 1,
       autoplay: true,
       speed: 500,
       autoplaySpeed: 5000,
-      cssEase: "linear",
       vertical: true,
       verticalSwiping: true,
     };
     return (
       <Slider className="home-slider"{...settings}>
-        <div className="home-slider__slide">
-          <IntroSliderCard title="hey"/> 
-          {/* {data.map((card, index) => {
+          {IntroSliderCardData.map((card, index) => {
             return (
               <IntroSliderCard
-                name={card.name}
+                title={card.title}
                 des={card.des}
+                btnText1={card.btnText1}
+                btnText2={card.btnText2}
+                img={card.img}
                 key={index}
               />
             );
-          })} */}
-        </div>
-         <div className="home-slider__slide">
-          <IntroSliderCard title="2"/>
-        </div>
-        <div className="home-slider__slide">
-          <IntroSliderCard title="3"/>
-        </div> 
+          })}
       </Slider>
     );
   }
