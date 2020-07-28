@@ -13,7 +13,7 @@ export const Header = () => {
     <header className="header ds">
       <ContentWidthLimiter>
         <div className="header-wrapper">
-          <div className="header-wrapper__logo"></div>
+          <a href="/" className="header-wrapper__logo"></a>
           <div className="button-wrapper">
               <Button margin="mr-md" color="yellow">
                 Вход
@@ -21,6 +21,12 @@ export const Header = () => {
               <Button color="yellow">
                 Регистрация
               </Button>
+          </div>
+
+          <div class="hamburger click" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
           </div>
         </div>
       </ContentWidthLimiter>

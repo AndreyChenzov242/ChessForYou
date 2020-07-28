@@ -1,3 +1,9 @@
+@import "../../../styles/common.scss";
+@import "../../../styles/configs.scss";
+@import "../../../styles/colors.scss";
+@import "../../../styles/mixins.scss";
+
+
 .header{
     position: fixed;
     left: 0;
@@ -20,10 +26,42 @@
         
         .button-wrapper{
             display: flex;
+
+            @media screen and (max-width: $breakpoint-down-sm) {
+                display: none;
+            }
         }
 
         .button--left{
             margin-right : 20px;
         }
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        @media (max-width: $breakpoint-down-sm) {
+                display: block;
+            }
+        .line {
+            width: 42px;
+            height: 4px;
+            background-color: $yellow;
+            display: block;
+            margin: 8px auto;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .hamburger .active .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger .active .line:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+    
+    .hamburger .active .line:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
     }
 }

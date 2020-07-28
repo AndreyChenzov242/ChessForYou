@@ -1,16 +1,22 @@
 @import "../../../styles/colors.scss";
+@import "../../../styles/configs.scss";
 
-.intro{
-    position: relative;
-    background-image: url(../../../assets/images/main-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+.intro {
+  position: relative;
+  background-image: url(../../../assets/images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 
-    .content-limiter{
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
+  .content-limiter {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      align-items: flex-start;
+      padding-top: 70px;
     }
+  }
 }

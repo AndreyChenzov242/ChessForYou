@@ -31,6 +31,22 @@ export const IntroSliderCardData = [
   },
 ];
 
+export const tabLinks = [
+  { tabName: "online", title: "online" },
+  { tabName: "offline", title: "offline" },
+];
+
+export const tabsContent = [
+  {
+    name: "online",
+    content: () => <div>online hello</div>,
+  },
+  {
+    name: "offline",
+    content: () => <div>offline hello</div>,
+  },
+];
+
 // // Type of props
 
 // Name.propTypes = {
