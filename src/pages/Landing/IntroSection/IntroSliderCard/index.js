@@ -45,10 +45,6 @@ export const IntroSliderCard = ({ title, des, btnText1, btnText2, img }) => {
         </Button>
       </div>
     </div>
-    //   <div className="home-link-card">
-    //    <p className="home-link-card__title" >{name}</p>
-    //    <p className="home-link-card__des">{des}</p>
-    //  </div>
   );
 };
 
