@@ -3,7 +3,6 @@
 @import "../../../../styles/mixins.scss";
 
 .tabs {
-
   &__header {
     display: flex;
 
@@ -15,11 +14,32 @@
       text-transform: uppercase;
       cursor: pointer;
       font-weight: bold;
-      
 
-      &--active{
+      &:hover {
+        border-width: 4px;
+      }
+
+      &--active {
         border-bottom: 4px solid $yellow;
         color: $yellow;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 32px;
+
+    &__title {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+
+      @media screen and (max-width:500px) {
+        font-size: 3.25rem;
+      }
+
+      @media screen and (max-width:447px) {
+        font-size: 2.5rem;
       }
     }
   }

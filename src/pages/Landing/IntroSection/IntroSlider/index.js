@@ -21,7 +21,7 @@ export class IntroSlider extends React.Component {
       autoplay: true,
       speed: 500,
       autoplaySpeed: 5000,
-      vertical: true,
+      // vertical: true,
       verticalSwiping: true,
     };
     return (

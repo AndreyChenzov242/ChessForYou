@@ -23,10 +23,10 @@ export const Header = () => {
               </Button>
           </div>
 
-          <div class="hamburger click" id="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+          <div className="hamburger click" id="hamburger">
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
           </div>
         </div>
       </ContentWidthLimiter>
