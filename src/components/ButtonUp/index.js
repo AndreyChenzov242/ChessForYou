@@ -58,6 +58,6 @@ ButtonUp.propTypes = {
 // Default props
 
 ButtonUp.defaultProps = {
-  visiblePosition: 200,
+  visiblePosition: 500,
   className: '',
 };
