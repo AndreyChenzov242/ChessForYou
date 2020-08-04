@@ -62,7 +62,7 @@ export class Header  extends React.Component {
               </Button>
           </div>
 
-          <div className="hamburger click" id="hamburger"  >
+          <div className="hamburger click" id="hamburger"  onClick={() => this.onShowLogInModal()}  >
                 <span className="line"></span>
                 <span className="line"></span>
                 <span className="line"></span>
