@@ -28,6 +28,11 @@
         font-weight: bold;
         min-width: 240px;
     }
+    &--size-fluid{
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 100%;
+    }
 
     &--mr-sm{
         margin-right : 8px;

@@ -4,6 +4,12 @@
 @import "../../../styles/mixins.scss";
 
 
+.overflow-hidden{
+    .header{
+        padding-right: 17px;
+    }
+}
+
 .header{
     position: fixed;
     left: 0;
@@ -19,9 +25,10 @@
         min-height: 80px;
 
         &__logo{
-            height: 34px;
+            height: 42px;
             width: 177px;
             background-image: url(../../../assets/images/logo.png);
+            background-repeat: no-repeat;
         }
         
         .button-wrapper{

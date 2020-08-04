@@ -1,19 +1,21 @@
 @mixin text-ellipsis {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @mixin center {
-	justify-content: center;
-	align-items: center;
-	display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-@mixin btn-hover($bg-color, $color,$border-color) {
-    &:hover{
-        color: $color;
-		background-color: $bg-color;
-		border-color: $border-color;
-    }
+@mixin btn-hover($bg-color, $color, $border-color) {
+  &:hover {
+    color: $color;
+    background-color: $bg-color;
+    border-color: $border-color;
+  }
 }
+
+

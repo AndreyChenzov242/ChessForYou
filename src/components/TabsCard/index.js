@@ -43,8 +43,8 @@ export const TabsCard = ({ title, name }) => {
               <span> {name}</span> обучения
             </div>
             <ul className="content__list">
-              {SecondTabsLi.map((TabsLi) => {
-                return <TabsFeatures prop={TabsLi} />;
+              {SecondTabsLi.map((TabsLi,index) => {
+                return <TabsFeatures prop={TabsLi} key={index} />;
               })}
             </ul>
           </div>

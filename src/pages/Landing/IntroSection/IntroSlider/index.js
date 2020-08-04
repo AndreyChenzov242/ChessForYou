@@ -22,7 +22,7 @@ export class IntroSlider extends React.Component {
       speed: 500,
       autoplaySpeed: 5000,
       // vertical: true,
-      verticalSwiping: true,
+      //verticalSwiping: true,
     };
     return (
       <Slider className="home-slider"{...settings}>

@@ -3,6 +3,9 @@ import React from "react";
 import { Header } from "./Header";
 import { IntroSection } from "./IntroSection";
 import {AboutSection} from "./AboutSection"
+import { ButtonUp } from '../../components/ButtonUp';
+
+import "./style.scss";
 
 export const MainPage = () => {
   return (
@@ -10,6 +13,7 @@ export const MainPage = () => {
       <Header />
       <IntroSection />
       <AboutSection/>
+      <ButtonUp className="landing__button-up"/>
     </div>
   );
 };
