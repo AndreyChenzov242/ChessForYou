@@ -5,9 +5,12 @@
 
 
 .overflow-hidden{
-    .header{
-        padding-right: 17px;
+    @media screen and (min-width:$breakpoint-up-md){
+        .header{
+            padding-right: 17px;
+        }
     }
+    
 }
 
 .header{
