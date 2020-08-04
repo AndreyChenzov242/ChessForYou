@@ -2,7 +2,7 @@ import React from 'react';
 
 // Modules
 
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { RiCloseLine } from 'react-icons/ri';
 
 // Components
 
@@ -14,8 +14,7 @@ import './styles.scss';
 
 // ----------------
 
-export const ModalHeader = props => {
-  const { onClose, title } = props;
+export const ModalHeader = ({onClose, title}) => {
 
   return onClose || title ? (
     <div className="modal-header">
@@ -27,7 +26,7 @@ export const ModalHeader = props => {
           onClick={onClose}
           size="xl"
         >
-          <AiOutlineCloseCircle />
+          <RiCloseLine />
         </ReactIcon>
       )}
     </div>

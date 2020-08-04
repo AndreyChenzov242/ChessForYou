@@ -8,6 +8,7 @@ import classNames from 'classnames';
 // Components
 
 import { ModalHeader } from './ModalHeader';
+import { ModalFooter } from './ModalFooter';
 
 // Styles
 
@@ -21,6 +22,7 @@ export const Modal = ({
   closeIcon = true,
   children,
   onClose,
+  footerData,
   width = 'sm',
   title = "hello",
   open ="true",
@@ -58,6 +60,10 @@ export const Modal = ({
           )}
 
           <div className={modalBodyClass}>{children}</div>
+          
+          {(footerData) && (
+            <ModalFooter footerData={footerData} />
+          )}
         </div>
 
         <div className="modal__backdrop" onClick={onClose} />

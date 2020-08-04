@@ -7,7 +7,7 @@ import types from "prop-types";
 // Components
 
 import { ReactIcon } from "../../../../components/ReactIcon";
-import Button from "../../../../components/atoms/button";
+import Button from "../../../../components/atoms/Button";
 
 // Static
 

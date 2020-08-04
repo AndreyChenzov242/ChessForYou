@@ -2,7 +2,7 @@ import React from "react";
 
 import classnames from "classnames";
 import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
-import Button from "../../../components/atoms/button";
+import {Button} from "../../../components/atoms/Button";
 import {IntroSlider} from "./IntroSlider"
 
 //Styles
