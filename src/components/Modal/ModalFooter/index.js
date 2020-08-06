@@ -1,13 +1,5 @@
 import React from "react";
 
-// Modules
-
-import { AiOutlineCloseCircle } from "react-icons/ai";
-
-// Components
-
-import { ReactIcon } from "../../ReactIcon";
-
 // Styles
 
 import "./styles.scss";

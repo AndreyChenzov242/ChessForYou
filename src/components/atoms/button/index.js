@@ -1,12 +1,16 @@
 import React from "react";
 
+// Modules
+
 import classnames from "classnames";
 
 //Styles
-//import "./styles.scss";
+
 import "../Button/styles.scss";
 
-export default function Button({ children, size = "sm", margin, variant = "outlined", color = "white",  onClick}) {
+//------------
+
+export const Button = ({ children, size = "sm", margin, variant = "outlined", color = "white",  onClick}) => {
   const buttonClass = classnames({
     button: true,
     [`button--size-${size}`]: size,
@@ -17,7 +21,3 @@ export default function Button({ children, size = "sm", margin, variant = "outli
 
   return <button className={buttonClass} onClick={onClick}>{children} </button>;
 }
-
-// Button.propTypes = {
-//     text = typeof.Str
-// };

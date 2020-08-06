@@ -2,7 +2,6 @@ import React from "react";
 
 // Modules
 
-import classNames from "classnames";
 import types from "prop-types";
 
 // Components
@@ -11,7 +10,6 @@ import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
 import { TabsCard } from "./TabsCard";
 import { tabLinks, tabsContent } from "../../../constants/TabsData";
 
-// import components
 
 // Styles
 
@@ -19,14 +17,7 @@ import "./styles.scss";
 
 // ----------------
 
-export const AboutSection = (props) => {
-  const { example } = props;
-
-  const nameClass = () =>
-    classNames({
-      "name-class": true,
-      "name-class--example": example,
-    });
+export const AboutSection = () => {
 
   return (
     <div className="about">

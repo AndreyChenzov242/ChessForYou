@@ -4,8 +4,11 @@ import React from "react";
 
 import types from "prop-types";
 
-import { TabsFeatures } from "../../components/TabsFeatures";
+// Components
+
 import { TabsCard } from "../../components/TabsCard";
+
+// Styles
 
 import "./styles.scss";
 

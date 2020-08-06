@@ -1,17 +1,13 @@
 import React from "react";
-import Slider from "react-slick";
+
 // Modules
 
 import types from "prop-types";
 
 // Components
 
-import { ReactIcon } from "../../../../components/ReactIcon";
-import Button from "../../../../components/atoms/Button";
+import {Button} from "../../../../components/atoms/Button";
 
-// Static
-
-import player from "../../../../assets/images/home-slider-img-1.png";
 
 // Styles
 
@@ -30,7 +26,6 @@ export const IntroSliderCard = ({ title, des, btnText1, btnText2, img }) => {
           <span className="sub-title__span">Добро пожаловать</span>
           <h1 className="title">
              Школа <span className="title--yellow"> шахмат </span>
-            {/* <span className="letter-spacing">для детей</span> */}
              {title}
           </h1>
         </div>

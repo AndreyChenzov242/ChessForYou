@@ -7,7 +7,6 @@ import types from 'prop-types';
 
 // Components
 
-// import components
 
 // Styles
 

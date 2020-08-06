@@ -3,11 +3,9 @@ import React from "react";
 // Modules
 
 import types from "prop-types";
-
-
-
 import { FaChessBishop,FaChessKing,FaChessKnight,FaChessQueen,FaChessRook,FaChessPawn } from "react-icons/fa";
 
+//------------
 
 export const FirstTabsLi = [
   { title: "Новый взгляд на обучение", desc: "занятия проходят на самых новых и удобных платформах", icon: () => <FaChessPawn/> },

@@ -2,14 +2,12 @@ import React from "react";
 
 // Modules
 
-import classNames from "classnames";
 import types from "prop-types";
 
 // Components
+
 import { TabsFeatures } from "../TabsFeatures";
 import { FirstTabsLi, SecondTabsLi } from "./TabsLi";
-
-// import components
 
 // Styles
 
@@ -18,8 +16,6 @@ import "./styles.scss";
 // ----------------
 
 export const TabsCard = ({ title, name }) => {
-  // console.log("FirstTabsLi:", FirstTabsLi);
-
   switch (name) {
     case "online":
       return (

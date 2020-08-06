@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Modules
 
@@ -7,10 +7,10 @@ import types from "prop-types";
 // Components
 
 import { Modal } from "../../../../components/Modal";
-import Button from "../../../../components/atoms/Button";
+import { Button } from "../../../../components/atoms/Button";
+
 // Styles
 
-// import './styles.scss';
 import "./styles.scss";
 
 // ----------------

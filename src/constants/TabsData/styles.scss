@@ -25,9 +25,11 @@
 
       @media screen and (max-width: $breakpoint-down-md) {
         flex: 50%;
+        max-width: 50%;
       }
       @media screen and (max-width: $breakpoint-down-xs) {
         flex: 100%;
+        max-width: 100%;
       }
 
       .title {

@@ -1,18 +1,23 @@
 import React from "react";
+
+//Modules
+
 import Slider from "react-slick";
 
+// Components
 
 import {IntroSliderCard} from '../IntroSliderCard';
 import {IntroSliderCardData} from '../../../../constants/IntroSliderCardData';
 
+// Styles
+
 import './styles.scss';
 
-
-
+// ----------------
 
 export class IntroSlider extends React.Component {
   render() {
-    var settings = {
+    let settings = {
       dots: true,
       infinite: true,
       arrows: false,
@@ -21,8 +26,6 @@ export class IntroSlider extends React.Component {
       autoplay: true,
       speed: 500,
       autoplaySpeed: 5000,
-      // vertical: true,
-      //verticalSwiping: true,
     };
     return (
       <Slider className="home-slider"{...settings}>

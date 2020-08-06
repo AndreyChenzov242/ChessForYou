@@ -4,13 +4,7 @@ import React from "react";
 
 import types from "prop-types";
 
-// Components
-
-// import components
-
-// Styles
-
-// ----------------
+//------------
 
 export const IntroSliderCardData = [
   {

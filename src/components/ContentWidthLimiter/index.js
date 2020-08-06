@@ -3,7 +3,7 @@ import React from 'react';
 // Modules
 
 import classnames from 'classnames';
-// import types from 'prop-types';
+import types from 'prop-types';
 
 // Styles
 

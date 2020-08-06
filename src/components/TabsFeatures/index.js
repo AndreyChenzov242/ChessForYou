@@ -4,11 +4,13 @@ import React from "react";
 
 import types from "prop-types";
 
+// Components
+
 import { ReactIcon } from "../ReactIcon"
 
-export const TabsFeatures = ({prop}) => {
-  // console.log("prop:",prop);
+//-----------
 
+export const TabsFeatures = ({prop}) => {
   return (
     <li className="list__item">
       <ReactIcon size="xl">

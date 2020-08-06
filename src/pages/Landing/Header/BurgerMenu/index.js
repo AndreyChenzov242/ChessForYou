@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Modules
 
@@ -7,17 +7,15 @@ import { createPortal } from 'react-dom';
 
 // Components
 
-import { Modal } from "../../../../components/Modal";
-import Button from "../../../../components/atoms/Button";
+import {Button} from "../../../../components/atoms/Button";
+
 // Styles
 
-// import './styles.scss';
 import "./styles.scss";
 
 // ----------------
 
 export const BurgerMenu = ({ open, onClose }) => {
-  //console.log(open, onClose);
   return createPortal(
     open ? (
     <BurgerMenu

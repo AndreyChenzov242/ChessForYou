@@ -2,12 +2,17 @@ import React from 'react';
 
 //Components
 
-import Button from "../../../components/atoms/Button";
+import { Button } from "../../../components/atoms/Button";
 import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
 import { LogInModal } from './LogInModal';
 import { BurgerMenu } from './BurgerMenu';
+
+
 //Styles
+
 import "./styles.scss";
+
+// ----------------
 
 export class Header  extends React.Component {
   constructor(props) {
