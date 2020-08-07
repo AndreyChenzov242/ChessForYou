@@ -11,6 +11,10 @@
     cursor: pointer;
     transition: all 0.5s;
 
+    &--size-xs{
+        font-size: 1rem;
+        min-width: 88px;
+    }
     &--size-sm{
         font-size: 1rem;
         min-width: 130px;
@@ -34,6 +38,9 @@
         width: 100%;
     }
 
+    &--mb-sm{
+        margin-bottom : 8px;
+    }
     &--mr-sm{
         margin-right : 8px;
     }
@@ -43,6 +50,9 @@
     &--ml-md{
         margin-left : 16px;
     }
+    &--mb-md{
+        margin-bottom : 16px;
+    }
     &--mr-md{
         margin-right : 16px;
     }
@@ -51,6 +61,9 @@
     }
     &--mr-lg{
         margin-right : 32px;
+    }
+    &--mb-lg{
+        margin-bottom : 32px;
     }
     &--ml-xl{
         margin-left : 48px;

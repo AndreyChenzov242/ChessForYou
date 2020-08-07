@@ -1,11 +1,15 @@
 import React from 'react';
 
+// Modules
+
+import classnames from "classnames";
+
 //Components
 
 import { Button } from "../../../components/atoms/Button";
 import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
 import { LogInModal } from './LogInModal';
-import { BurgerMenu } from './BurgerMenu';
+import { HeaderSideBar } from './HeaderSideBar';
 
 
 //Styles
@@ -15,15 +19,14 @@ import "./styles.scss";
 // ----------------
 
 export class Header  extends React.Component {
+  
   constructor(props) {
     super(props);
 
     this.state = {
       isEditModalOpen: false,
-      inputValue: '',
-      modalData: {},
-      todoList: [],
       isBurgerMenuOpen: false,
+      hamburgerActive:false,
     };
   }
 
@@ -38,27 +41,35 @@ export class Header  extends React.Component {
   };
 
   toggleBurgerMenu = () => {
-    //console.log("im here");
     this.setState(prevState => ({
       isBurgerMenuOpen: !prevState.isBurgerMenuOpen,
     }));
-    // console.log(isBurgerMenuOpen);
   };
 
   onShowBurgerMenu = () => {
     this.toggleBurgerMenu();
   };
 
+  setHamburgerActive = () =>{
+    this.setState(prevState => ({
+      hamburgerActive: !prevState.hamburgerActive,
+    }));
+  }
 
+  
   render() {
-    const { todoList, inputValue, isEditModalOpen, modalData,isBurgerMenuOpen } = this.state;
+    const { isEditModalOpen,isBurgerMenuOpen,hamburgerActive } = this.state;
+    const hamburgerClass = classnames({
+      hamburger: true,
+      [`hamburger--active`]: hamburgerActive,
+    });
 
   return (
     <header className="header ds">
       <ContentWidthLimiter>
         <div className="header-wrapper">
           <a href="/" className="header-wrapper__logo"></a>
-          <div className="button-wrapper">
+          <div className="buttons-wrapper">
               <Button margin="mr-md" color="yellow" onClick={() => this.onShowLogInModal()}>
                 Вход
               </Button>
@@ -67,7 +78,7 @@ export class Header  extends React.Component {
               </Button>
           </div>
 
-          <div className="hamburger click" id="hamburger"  onClick={() => this.onShowLogInModal()}  >
+          <div className={hamburgerClass}  onClick={() => (this.onShowBurgerMenu(),this.setHamburgerActive())}  >
                 <span className="line"></span>
                 <span className="line"></span>
                 <span className="line"></span>
@@ -75,7 +86,7 @@ export class Header  extends React.Component {
 
         </div>
       
-      <BurgerMenu open={isBurgerMenuOpen}  onClose={this.toggleBurgerMenu}/>
+      <HeaderSideBar open={isBurgerMenuOpen} onLog={this.onShowLogInModal}/>
 
 
         <LogInModal
