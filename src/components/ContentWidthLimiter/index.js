@@ -11,8 +11,7 @@ import './styles.scss';
 
 // ----------------
 
-export const ContentWidthLimiter = ({fullWidth, children}) => {
-
+export const ContentWidthLimiter = ({ fullWidth, children }) => {
   const contentLiminterClass = classnames({
     'content-limiter': true,
     'content-limiter--full-width': fullWidth,

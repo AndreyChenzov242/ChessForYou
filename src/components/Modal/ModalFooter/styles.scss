@@ -1,14 +1,13 @@
 @import '../../../styles/configs';
 @import '../../../styles//colors.scss';
 
-
 .modal__footer {
   background-color: #f1f1f1;
 
-  a{
+  a {
     color: #337ab7;
 
-    &:hover{
+    &:hover {
       text-decoration: none;
       color: #e6912c;
     }

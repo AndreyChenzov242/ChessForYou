@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 // Components
 
-import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
-import { IntroSlider } from "./IntroSlider"
+import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
+import { IntroSlider } from './IntroSlider';
 
 //Styles
 
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
@@ -15,7 +15,7 @@ export const IntroSection = () => {
   return (
     <div className="intro ds">
       <ContentWidthLimiter>
-          <IntroSlider/>
+        <IntroSlider />
       </ContentWidthLimiter>
     </div>
   );

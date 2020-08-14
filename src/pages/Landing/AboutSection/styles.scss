@@ -2,12 +2,11 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/mixins.scss';
 
-.about{
+.about {
   min-height: 100vh;
   padding: 120px 0;
 
-  @media screen and (max-width:$breakpoint-down-sm) {
+  @media screen and (max-width: $breakpoint-down-sm) {
     padding: 100px 0;
   }
-  
 }

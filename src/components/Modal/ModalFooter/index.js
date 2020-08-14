@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 // Styles
 
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
 export const ModalFooter = ({ footerData }) => {
-  const {footerTitle, linkTitle, link} = footerData;
+  const { footerTitle, linkTitle, link } = footerData;
 
   return footerData ? (
     <div className="modal__footer">

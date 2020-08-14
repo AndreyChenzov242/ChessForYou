@@ -17,15 +17,15 @@ import './styles.scss';
 // ----------------
 
 export const Modal = ({
-  bodyHeight = "sm",
+  bodyHeight = 'sm',
   noPadding,
   closeIcon = true,
   children,
   onClose,
   footerData,
   width = 'sm',
-  title = "hello",
-  open ="true",
+  title = 'hello',
+  open = 'true',
 }) => {
   useEffect(() => {
     if (open) {
@@ -60,10 +60,8 @@ export const Modal = ({
           )}
 
           <div className={modalBodyClass}>{children}</div>
-          
-          {(footerData) && (
-            <ModalFooter footerData={footerData} />
-          )}
+
+          {footerData && <ModalFooter footerData={footerData} />}
         </div>
 
         <div className="modal__backdrop" onClick={onClose} />

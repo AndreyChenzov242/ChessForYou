@@ -1,30 +1,28 @@
 @import '../../../../styles/configs.scss';
 
-.modal__body{
-  .modal__input{
+.modal__body {
+  .modal__input {
     width: 100%;
     height: 36px;
     padding: 0 10px;
   }
-  input[type="checkbox"]{
+  input[type='checkbox'] {
     margin-right: 8px;
   }
-  .button:hover{
-    border-color: #F2CA00;
-    background-color: #F2CA00;
+  .button:hover {
+    border-color: #f2ca00;
+    background-color: #f2ca00;
     color: #1f232b;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     transition: 0.2s all;
   }
 }
 
-.modal__body>*+* {
+.modal__body > * + * {
   margin-top: 15px;
 }
 
-
-.modal__footer{
+.modal__footer {
   padding: 36px;
   text-align: center;
 }
-

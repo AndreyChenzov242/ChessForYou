@@ -14,8 +14,7 @@ import './styles.scss';
 
 // ----------------
 
-export const ModalHeader = ({onClose, title}) => {
-
+export const ModalHeader = ({ onClose, title }) => {
   return onClose || title ? (
     <div className="modal-header">
       <a href="/" className="header-wrapper__logo"></a>

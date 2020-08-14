@@ -1,23 +1,23 @@
-import React from "react";
+import React from 'react';
 
 // Modules
 
-import types from "prop-types";
-import classnames from "classnames";
+import types from 'prop-types';
+import classnames from 'classnames';
 
 // Components
 
-import { Button } from "../../../../components/atoms/Button";
+import { Button } from '../../../../components/Button';
 
 // Styles
 
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
 export const HeaderSideBar = ({ open, onClose, onLog, onReg }) => {
   console.log(open);
-  console.log("im oppend HeaderSideBar");
+  console.log('im oppend HeaderSideBar');
 
   const headerSideBarClass = classnames({
     sideBar: true,

@@ -1,6 +1,6 @@
-@import "../../../../styles/configs.scss";
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/mixins.scss";
+@import '../../../../styles/configs.scss';
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/mixins.scss';
 
 .tabs {
   &__header {
@@ -34,12 +34,11 @@
       margin: 0 auto;
       text-align: center;
 
-
-      @media screen and (max-width:500px) {
+      @media screen and (max-width: 500px) {
         font-size: 3.25rem;
       }
 
-      @media screen and (max-width:447px) {
+      @media screen and (max-width: 447px) {
         font-size: 2.5rem;
       }
     }

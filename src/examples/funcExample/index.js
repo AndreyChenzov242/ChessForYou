@@ -7,7 +7,6 @@ import types from 'prop-types';
 
 // Components
 
-
 // Styles
 
 import './styles.scss';

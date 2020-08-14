@@ -7,10 +7,9 @@
   width: 100%;
   padding: 0 64px;
 
-  @media screen and (max-width:$breakpoint-down-sm) {
+  @media screen and (max-width: $breakpoint-down-sm) {
     padding: 0 16px;
   }
-
 
   &__slide {
     outline: none;
@@ -28,7 +27,7 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width:$breakpoint-down-sm) {
+    @media screen and (max-width: $breakpoint-down-sm) {
       width: 32px;
     }
 

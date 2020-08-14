@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 // Modules
 
-import classNames from "classnames";
-import types from "prop-types";
-
+import classNames from 'classnames';
+import types from 'prop-types';
 
 // Styles
 
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
@@ -17,22 +16,22 @@ export const TabsCard = ({ content, links, defaultTab }) => {
     defaultTab || links[0].name
   );
 
-  const handleTabSet = (name) => {
+  const handleTabSet = name => {
     setActiveTabName(name);
   };
 
-  const tab = content.find((tab) => tab.name === activeTabName);
+  const tab = content.find(tab => tab.name === activeTabName);
 
-  const linkClass = (name) =>
+  const linkClass = name =>
     classNames({
-      "tabs__header-link": true,
-      "tabs__header-link--active": name === activeTabName,
+      'tabs__header-link': true,
+      'tabs__header-link--active': name === activeTabName,
     });
 
   return (
     <div className="tabs">
       <div className="tabs__header">
-        {links.map((link) => {
+        {links.map(link => {
           return (
             <div
               className={linkClass(link.name)}

@@ -1,12 +1,11 @@
 @import '../../../styles/configs';
 @import '../../../styles//colors.scss';
 
-
 .modal-header {
   min-height: 48px;
   padding: 16px 60px 0 36px;
 
-  .header-wrapper__logo{
+  .header-wrapper__logo {
     display: block;
     background-image: url(../../../assets/images/logo-black.png);
   }
@@ -18,7 +17,7 @@
     cursor: pointer;
     right: 10px;
     top: 10px;
-    color: #F2CA00;
+    color: #f2ca00;
     font-size: 36px;
 
     &:hover {

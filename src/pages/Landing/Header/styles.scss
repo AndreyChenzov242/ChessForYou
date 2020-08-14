@@ -1,82 +1,77 @@
-@import "../../../styles/common.scss";
-@import "../../../styles/configs.scss";
-@import "../../../styles/colors.scss";
-@import "../../../styles/mixins.scss";
+@import '../../../styles/common.scss';
+@import '../../../styles/configs.scss';
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
 
-
-.overflow-hidden{
-    @media screen and (min-width:$breakpoint-up-md){
-        .header{
-            padding-right: 17px;
-        }
+.overflow-hidden {
+  @media screen and (min-width: $breakpoint-up-md) {
+    .header {
+      padding-right: 17px;
     }
-    
+  }
 }
 
-.header{
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 10000;
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10000;
 
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
 
-    &-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 80px;
-
-        &__logo{
-            height: 42px;
-            width: 177px;
-            background-image: url(../../../assets/images/logo.png);
-            background-repeat: no-repeat;
-        }
-        
-        .buttons-wrapper{
-            display: flex;
-
-            @media screen and (max-width: $breakpoint-down-sm) {
-                display: none;
-            }
-        }
-
-        .button--left{
-            margin-right : 20px;
-        }
+    &__logo {
+      height: 42px;
+      width: 177px;
+      background-image: url(../../../assets/images/logo.png);
+      background-repeat: no-repeat;
     }
 
-    .hamburger {
+    .buttons-wrapper {
+      display: flex;
+
+      @media screen and (max-width: $breakpoint-down-sm) {
         display: none;
-        cursor: pointer;
-        width: 42px;
-        height: 42px;
-
-        @media (max-width: $breakpoint-down-sm) {
-                display: block;
-            }
-        .line {
-            width: 36px;
-            height: 4px;
-            background-color: $yellow;
-            display: block;
-            margin: 8px auto;
-            transition: all 0.3s ease-in-out;
-        }
-
-        &--active .line:nth-child(2) {
-            opacity: 0;
-        }
-        
-        &--active .line:nth-child(1) {
-            transform: translateY(12px) rotate(45deg);
-        }
-        
-        &--active .line:nth-child(3) {
-            transform: translateY(-12px) rotate(-45deg);
-        }
+      }
     }
 
-    
+    .button--left {
+      margin-right: 20px;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+
+    @media (max-width: $breakpoint-down-sm) {
+      display: block;
+    }
+    .line {
+      width: 36px;
+      height: 4px;
+      background-color: $yellow;
+      display: block;
+      margin: 8px auto;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &--active .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    &--active .line:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
+
+    &--active .line:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+  }
 }

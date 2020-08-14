@@ -2,31 +2,29 @@ import React from 'react';
 
 // Modules
 
-import classnames from "classnames";
+import classnames from 'classnames';
 
 //Components
 
-import { Button } from "../../../components/atoms/Button";
-import { ContentWidthLimiter } from "../../../components/ContentWidthLimiter";
+import { Button } from '../../../components/Button';
+import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
 import { LogInModal } from './LogInModal';
 import { HeaderSideBar } from './HeaderSideBar';
 
-
 //Styles
 
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
-export class Header  extends React.Component {
-  
+export class Header extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isEditModalOpen: false,
       isBurgerMenuOpen: false,
-      hamburgerActive:false,
+      hamburgerActive: false,
     };
   }
 
@@ -35,7 +33,7 @@ export class Header  extends React.Component {
       isEditModalOpen: !prevState.isEditModalOpen,
     }));
   };
-  
+
   onShowLogInModal = () => {
     this.toggleModal();
   };
@@ -50,54 +48,63 @@ export class Header  extends React.Component {
     this.toggleBurgerMenu();
   };
 
-  setHamburgerActive = () =>{
+  setHamburgerActive = () => {
     this.setState(prevState => ({
       hamburgerActive: !prevState.hamburgerActive,
     }));
-  }
+  };
 
-  
   render() {
-    const { isEditModalOpen,isBurgerMenuOpen,hamburgerActive } = this.state;
+    const { isEditModalOpen, isBurgerMenuOpen, hamburgerActive } = this.state;
     const hamburgerClass = classnames({
       hamburger: true,
       [`hamburger--active`]: hamburgerActive,
     });
 
-  return (
-    <header className="header ds">
-      <ContentWidthLimiter>
-        <div className="header-wrapper">
-          <a href="/" className="header-wrapper__logo"></a>
-          <div className="buttons-wrapper">
-              <Button margin="mr-md" color="yellow" onClick={() => this.onShowLogInModal()}>
+    return (
+      <header className="header ds">
+        <ContentWidthLimiter>
+          <div className="header-wrapper">
+            <a href="/" className="header-wrapper__logo"></a>
+            <div className="buttons-wrapper">
+              <Button
+                margin="mr-md"
+                color="yellow"
+                onClick={() => this.onShowLogInModal()}
+              >
                 Вход
               </Button>
               <Button color="yellow" onClick={() => this.onShowLogInModal()}>
                 Регистрация
               </Button>
+            </div>
+
+            <div
+              className={hamburgerClass}
+              onClick={() => (
+                this.onShowBurgerMenu(), this.setHamburgerActive()
+              )}
+            >
+              <span className="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
+            </div>
           </div>
 
-          <div className={hamburgerClass}  onClick={() => (this.onShowBurgerMenu(),this.setHamburgerActive())}  >
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-          </div>
+          <HeaderSideBar
+            open={isBurgerMenuOpen}
+            onLog={this.onShowLogInModal}
+          />
 
-        </div>
-      
-      <HeaderSideBar open={isBurgerMenuOpen} onLog={this.onShowLogInModal}/>
-
-
-        <LogInModal
-              onClose={this.toggleModal}
+          <LogInModal
+            onClose={this.toggleModal}
             //  onSave={this.onSaveHandler}
             //  title="Edit todo modal"
             // data={modalData}
-             open={isEditModalOpen}
-          /> 
-      </ContentWidthLimiter>
-    </header>
-  );
+            open={isEditModalOpen}
+          />
+        </ContentWidthLimiter>
+      </header>
+    );
   }
 }
